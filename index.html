@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Route</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Google Maps</title>
+    <link href="css/jquery.mobile-1.4.5.css" rel="stylesheet">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/jquery.mobile-1.4.5.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEvESOJ0402Wrxd8TzwzLnHPnV7LgwzRQ&callback=init"
+            async defer></script>
+    <script src="LocationTracker.js"></script>
+        <style>
+        #mapPage, #map { 
+            width: 100%; height: 100%; padding: 0; }
+    </style>
+</head>
+<body>
+ <div data-role="page" id="mapPage">
+       <div data-role="header" data-fullscreen="true">
+            <h1 id="address">Route</h1>
+        </div>
+        <div data-role="content" id="map"><strong>Loading...<br />
+          If map doesn't show in 3 seconds, please refresh your browser.  
+        </strong></div>
+     <div data-role="footer" data-position="fixed">
+            <h4>Zichen Ma, <a href="https://github.com/zichenma/jquery_location_tracker.git" target="_blank">Source Code</a></h4>
+     </div>
+    </div>
+    </body>
+</html>
